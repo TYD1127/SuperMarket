@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fa"
+    android:background="#B7E4E6CD"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        app:srcCompat="@drawable/me_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/lzh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/et_1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="用户名:"
+            android:textColor="#00BCD4"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/u_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint="用户名"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lzh"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/et_1"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="密   码:"
+            android:textColor="#2196F3"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/u_pwd"
+            android:password="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:hint="输入密码"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/denglu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        android:background="@drawable/et_1"
+        android:layout_below="@+id/mm"
+        android:layout_marginTop="60dp"
+        android:onClick="denglu"
+        />
+
+    <Button
+        android:id="@+id/ljzc"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/mm"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/et_1"
+        android:onClick="denglu"
+        android:text="没有账号？立即注册"
+        android:textColor="#FF9800"
+        android:textSize="8sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
